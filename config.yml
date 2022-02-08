@@ -73,7 +73,6 @@ homebrew_installed_packages:
   - curl
   - wget
   - freetds
-  - font-meslo-lg-nerd-font
   - pyenv
   - direnv
   - ruby
