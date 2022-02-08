@@ -1,0 +1,163 @@
+---
+downloads: ~/.ansible-downloads/
+
+configure_dotfiles: true
+configure_terminal: true
+configure_osx: true
+
+# Set to 'true' to configure the Dock via dockutil.
+configure_dock: false
+dockitems_remove:
+  - Launchpad
+  - TV
+  - Podcasts
+  - 'App Store'
+  - Safari
+  - Messages
+  - Mail
+  - Maps
+  - Photos
+  - Facetime
+  - Calendar
+  - Contacts
+  - Reminders
+  - Notes
+  - Music
+  - News
+  
+dockitems_persist: 
+  - name: "Google Chrome Canary"
+    path: "/Applications/Google Chrome Canary.app/"
+    pos: 2
+  - name: "Visual Studio Code"
+    path: "/Applications/Visual Studio Code.app/"
+    pos: 3
+  - name: "Netbeans 12.0"
+    path: "/Applications/Netbeans/Netbeans 12.0.app/"
+    pos: 4
+  - name: "Kitty"
+    path: "/Applications/Kitty.app/"
+    pos: 6
+# - name: "Sublime Text"
+#   path: "/Applications/Sublime Text.app/"
+#   pos: 5
+
+configure_sudoers: false
+sudoers_custom_config: ''
+# Example:
+# sudoers_custom_config: |
+#   # Allow users in admin group to use sudo with no password.
+#   %admin ALL=(ALL) NOPASSWD: ALL
+
+dotfiles_repo: https://github.com/adammcdonagh/dotfiles.git
+dotfiles_repo_accept_hostkey: true
+dotfiles_repo_local_destination: ~/git/dotfiles
+dotfiles_files:
+  - .zshrc
+  - .gitignore
+  - .inputrc
+  - .osx
+  - .vimrc
+
+homebrew_installed_packages:
+  # - ansible # Installed via Pip.
+  - autoconf
+  - bash-completion
+  - git
+  - gpg
+  - sqlite
+  - node
+  - php
+  - openssl
+  - jq
+  - curl
+  - wget
+  - freetds
+  - font-meslo-lg-nerd-font
+  - pyenv
+  - direnv
+  - ruby
+  - terraform
+  - tomcat@7
+  - tomcat
+  - vault
+
+homebrew_taps:
+  - homebrew/core
+  - homebrew/cask
+  - homebrew/cask-fonts
+
+homebrew_cask_appdir: /Applications
+homebrew_cask_apps:
+  - font-meslo-lg-nerd-font
+  - font-meslo-for-powerline
+  - font-hasklig
+  - kitty
+  - google-drive
+  - insomnia
+  - docker
+  - google-chrome-canary
+  - transmit
+  - vagrant
+  - visual-studio-code
+  - oracle-jdk
+  - netbeans
+  - hyperswitch
+  - gimp
+  - sensiblesidebuttons
+  - sqlitestudio
+  - wireshark
+  - microsoft-remote-desktop
+# Missing vault-ui (no cask exists)
+
+# See `geerlingguy.mas` role documentation for usage instructions.
+mas_installed_apps: []
+mas_email: ""
+mas_password: ""
+
+osx_script: "~/.osx --no-restart"
+
+# Install packages from other package managers.
+# Note: You are responsible for making sure the required package managers are
+# installed, eg. through homebrew.
+composer_packages: []
+# - name: drush
+#   state: present # present/absent, default: present
+#   version: "^8.1" # default: N/A
+gem_packages: []
+# - name: bundler
+#   state: present # present/absent/latest, default: present
+#   version: "~> 1.15.1" # default: N/A
+npm_packages: []
+# - name: webpack
+#   state: present # present/absent/latest, default: present
+#   version: "^2.6" # default: N/A
+pip_packages:
+  - name: requests
+    state: present
+  - name: black
+    state: present
+  - name: flake8
+    state: present
+  - name: flake8-bugbear
+    state: present
+  - name: flake8-polyfill
+    state: present
+  - name: flake8-use-fstring
+    state: present
+  - name: pep8-naming
+    state: present
+  - name: boto3
+    state: present
+# - name: mkdocs
+#   state: present # present/absent/latest, default: present
+#   version: "0.16.3" # default: N/A
+
+# Set to 'true' to configure Sublime Text.
+configure_sublime: false
+sublime_base_path: '~/Library/Application Support/Sublime Text'
+sublime_config_path: "Packages/User"
+sublime_package_control: []
+
+# Glob pattern to ansible task files to run after all other tasks are finished.
+post_provision_tasks: []
