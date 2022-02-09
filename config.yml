@@ -87,7 +87,7 @@ homebrew_installed_packages:
   - tomcat
   - vault
   - zsh-syntax-highlighting
-  - duti
+  # - duti
 
 homebrew_taps:
   - homebrew/core
