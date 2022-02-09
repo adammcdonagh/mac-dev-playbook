@@ -60,6 +60,7 @@ dotfiles_files:
   - .osx
   - .vimrc
   - .gitconfig
+  - .config/kitty/kitty.conf
   
 
 homebrew_installed_packages:
