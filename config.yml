@@ -54,10 +54,13 @@ dotfiles_repo_accept_hostkey: true
 dotfiles_repo_local_destination: ~/git/dotfiles
 dotfiles_files:
   - .zshrc
+  - .p10k.zsh
   - .gitignore
   - .inputrc
   - .osx
   - .vimrc
+  - .gitconfig
+  
 
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
@@ -108,6 +111,7 @@ homebrew_cask_apps:
   - sqlitestudio
   - wireshark
   - microsoft-remote-desktop
+  - kdiff3
 # Missing vault-ui (no cask exists)
 
 # See `geerlingguy.mas` role documentation for usage instructions.

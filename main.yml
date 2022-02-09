@@ -16,9 +16,9 @@
     - role: geerlingguy.mac.homebrew
       tags: ['homebrew']
     
-  #   - role: geerlingguy.dotfiles
-  #     when: configure_dotfiles
-  #     tags: ['dotfiles']
+    - role: geerlingguy.dotfiles
+      when: configure_dotfiles
+      tags: ['dotfiles']
   #   - role: geerlingguy.mac.mas
   #     when: mas_installed_apps or mas_installed_app_ids
   #     tags: ['mas']
@@ -26,7 +26,9 @@
       when: configure_dock
       tags: ['dock']
 
-  # tasks:
+  tasks:
+      - import_tasks: tasks/zsh.yml
+        tags: ['zsh']
   #   - import_tasks: tasks/sudoers.yml
   #     when: configure_sudoers
   #     tags: ['sudoers']
@@ -35,9 +37,9 @@
   #     when: configure_terminal
   #     tags: ['terminal']
 
-  #   - import_tasks: tasks/osx.yml
-  #     when: configure_osx
-  #     tags: ['osx']
+    - import_tasks: tasks/osx.yml
+      when: configure_osx
+      tags: ['osx']
 
   #   - import_tasks: tasks/extra-packages.yml
   #     tags: ['extra-packages']
