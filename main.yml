@@ -29,6 +29,9 @@
   tasks:
     - import_tasks: tasks/zsh.yml
       tags: ['zsh']
+      
+    - name: Set Chrome Canary to default browser
+      command: "duti -s com.google.chrome.canary public.html all"
   #   - import_tasks: tasks/sudoers.yml
   #     when: configure_sudoers
   #     tags: ['sudoers']

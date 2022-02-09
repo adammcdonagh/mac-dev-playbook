@@ -62,6 +62,7 @@ dotfiles_files:
   - .gitconfig
   - .config/kitty/kitty.conf
   - Library/Preferences/com.bahoom.HyperSwitch.plist
+  - .m2/settings.xml
   
 
 homebrew_installed_packages:
@@ -86,6 +87,7 @@ homebrew_installed_packages:
   - tomcat
   - vault
   - zsh-syntax-highlighting
+  - duti
 
 homebrew_taps:
   - homebrew/core
