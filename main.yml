@@ -27,8 +27,8 @@
       tags: ['dock']
 
   tasks:
-      - import_tasks: tasks/zsh.yml
-        tags: ['zsh']
+    - import_tasks: tasks/zsh.yml
+      tags: ['zsh']
   #   - import_tasks: tasks/sudoers.yml
   #     when: configure_sudoers
   #     tags: ['sudoers']
