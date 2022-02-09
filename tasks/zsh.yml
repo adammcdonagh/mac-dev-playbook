@@ -11,6 +11,16 @@
     chdir: '~'
     creates: '~/.oh-my-zsh'
 
+- name: clone powerlevel10k theme
+  tags:
+    # Suppress warning: [ANSIBLE0006] git used in place of git module
+    # Git module doesn't allow us to set `core.autocrlf=input`.
+    - skip_ansible_lint
+  # core.autocrlf=input prevents https://github.com/robbyrussell/oh-my-zsh/issues/4402
+  command: 'git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k'
+  args:
+    chdir: '~'
+    creates: '~/.oh-my-zsh/themes/powerlevel10k'
 
 - name: set permissions of oh-my-zsh 
   file:
