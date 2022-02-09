@@ -38,7 +38,7 @@
     # - name: Set Chrome Canary to default browser
     #   command: "duti -s com.google.chrome.canary public.html all"
     #   tags: ['default_browser']
-    
+
   #   - import_tasks: tasks/sudoers.yml
   #     when: configure_sudoers
   #     tags: ['sudoers']
@@ -51,8 +51,8 @@
       when: configure_osx
       tags: ['osx']
 
-  #   - import_tasks: tasks/extra-packages.yml
-  #     tags: ['extra-packages']
+    - import_tasks: tasks/extra-packages.yml
+      tags: ['extra-packages']
 
   #   - import_tasks: tasks/sublime-text.yml
   #     when: configure_sublime
