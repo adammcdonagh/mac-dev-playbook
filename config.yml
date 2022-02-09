@@ -83,6 +83,7 @@ homebrew_installed_packages:
   - tomcat@7
   - tomcat
   - vault
+  - zsh-syntax-highlighting
 
 homebrew_taps:
   - homebrew/core
