@@ -61,6 +61,7 @@ dotfiles_files:
   - .vimrc
   - .gitconfig
   - .config/kitty/kitty.conf
+  - Library/Preferences/com.bahoom.HyperSwitch.plist
   
 
 homebrew_installed_packages:
