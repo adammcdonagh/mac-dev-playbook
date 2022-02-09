@@ -33,7 +33,7 @@ dockitems_persist:
     path: "/Applications/Visual Studio Code.app/"
     pos: 3
   - name: "Apache Netbeans 12.6"
-    path: "/Applications/Netbeans/Apache Netbeans 12.6.app/"
+    path: "/Applications/NetBeans/Apache NetBeans 12.6.app/"
     pos: 4
   - name: "Kitty"
     path: "/Applications/Kitty.app/"
