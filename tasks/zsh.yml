@@ -17,10 +17,10 @@
     # Git module doesn't allow us to set `core.autocrlf=input`.
     - skip_ansible_lint
   # core.autocrlf=input prevents https://github.com/robbyrussell/oh-my-zsh/issues/4402
-  command: 'git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $HOME/.oh-my-zsh/custom/themes/powerlevel10k'
+  command: 'git clone -c core.autocrlf=input --depth=1 https://github.com/romkatv/powerlevel10k.git .oh-my-zsh/custom/themes/powerlevel10k'
   args:
     chdir: '~'
-    creates: '~/.oh-my-zsh/themes/powerlevel10k'
+    creates: '~/.oh-my-zsh/custom/themes/powerlevel10k'
 
 - name: set permissions of oh-my-zsh 
   file:
