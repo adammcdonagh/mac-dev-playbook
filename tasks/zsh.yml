@@ -14,9 +14,8 @@
 
 - name: set permissions of oh-my-zsh 
   file:
-    path: '~/.oh-my-zsh'
+    path: '~/.oh-my-zsh/oh-my-zsh.sh'
     # Prevent the cloned repository from having insecure permissions. Failing to do
     # so causes compinit() calls to fail with "command not found: compdef" errors
     # for users with insecure umasks (e.g., "002", allowing group writability).
-    mode: 'go-w'
-    recurse: yes
+    mode: '0764'
