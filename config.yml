@@ -159,6 +159,10 @@ pip_packages:
     state: present
   - name: boto3
     state: present
+  - name: ansible
+    state: present
+  - name: ansible-lint
+    state: present
 # - name: mkdocs
 #   state: present # present/absent/latest, default: present
 #   version: "0.16.3" # default: N/A
