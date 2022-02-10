@@ -118,6 +118,7 @@ homebrew_cask_apps:
   - wireshark
   - microsoft-remote-desktop
   - kdiff3
+  - parallels16
 # Missing vault-ui (no cask exists)
 
 # See `geerlingguy.mas` role documentation for usage instructions.
