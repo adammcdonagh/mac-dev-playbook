@@ -11,7 +11,7 @@ dockitems_remove:
   - Launchpad
   - TV
   - Podcasts
-  - 'App Store'
+  - "App Store"
   - Safari
   - Messages
   - Mail
@@ -25,7 +25,7 @@ dockitems_remove:
   - Music
   - News
 
-dockitems_persist: 
+dockitems_persist:
   - name: "Google Chrome Canary"
     path: "/Applications/Google Chrome Canary.app/"
     pos: 2
@@ -43,7 +43,7 @@ dockitems_persist:
 #   pos: 5
 
 configure_sudoers: false
-sudoers_custom_config: ''
+sudoers_custom_config: ""
 # Example:
 # sudoers_custom_config: |
 #   # Allow users in admin group to use sudo with no password.
@@ -63,7 +63,6 @@ dotfiles_files:
   - .config/kitty/kitty.conf
   - Library/Preferences/com.bahoom.HyperSwitch.plist
   - .m2/settings.xml
-  
 
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
@@ -88,6 +87,7 @@ homebrew_installed_packages:
   - vault
   - zsh-syntax-highlighting
   - python3
+  - alt-tab
   # - duti
 
 homebrew_taps:
@@ -106,12 +106,10 @@ homebrew_cask_apps:
   - insomnia
   - docker
   - google-chrome-canary
-  - transmit
   - vagrant
   - visual-studio-code
   - oracle-jdk
   - netbeans
-  - hyperswitch
   - gimp
   - sensiblesidebuttons
   - sqlitestudio
@@ -170,7 +168,7 @@ pip_packages:
 
 # Set to 'true' to configure Sublime Text.
 configure_sublime: false
-sublime_base_path: '~/Library/Application Support/Sublime Text'
+sublime_base_path: "~/Library/Application Support/Sublime Text"
 sublime_config_path: "Packages/User"
 sublime_package_control: []
 
