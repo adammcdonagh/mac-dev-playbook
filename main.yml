@@ -12,7 +12,7 @@
       tags: ["always"]
     - name: Create some dirs
       file:
-        path: ~/.m2
+        path: "{{ item }}"
         state: directory
       tags: ["always"]
       with_items:
