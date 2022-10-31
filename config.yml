@@ -107,7 +107,7 @@ homebrew_cask_apps:
   - insomnia
   - docker
   - google-chrome-canary
-  - vagrant
+  # - vagrant
   - visual-studio-code
   - oracle-jdk
   - netbeans
@@ -116,8 +116,8 @@ homebrew_cask_apps:
   - sqlitestudio
   - wireshark
   - microsoft-remote-desktop
-  - kdiff3
-  - parallels16
+  # - kdiff3
+  - parallels
 # Missing vault-ui (no cask exists)
 
 # See `geerlingguy.mas` role documentation for usage instructions.
