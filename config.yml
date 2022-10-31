@@ -67,6 +67,7 @@ dotfiles_files:
   - .vimrc
   - .gitconfig
   - .config/kitty/kitty.conf
+  - .config/kitty/startup.conf
   - .config/pip/pip.conf
   - Library/Preferences/com.bahoom.HyperSwitch.plist
   - .m2/settings.xml
