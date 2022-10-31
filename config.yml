@@ -24,6 +24,12 @@ dockitems_remove:
   - Notes
   - Music
   - News
+  - Keynote
+  - Numbers
+  - Pages
+  - MacPass
+  - "Workspace ONE Intellegent Hub"
+  - Catalog
 
 dockitems_persist:
   - name: "Google Chrome Canary"
@@ -32,8 +38,8 @@ dockitems_persist:
   - name: "Visual Studio Code"
     path: "/Applications/Visual Studio Code.app/"
     pos: 3
-  - name: "Apache Netbeans 12.6"
-    path: "/Applications/NetBeans/Apache NetBeans 12.6.app/"
+  - name: "Apache Netbeans 15"
+    path: "/Applications/NetBeans/Apache NetBeans 15.app/"
     pos: 4
   - name: "Kitty"
     path: "/Applications/Kitty.app/"
@@ -61,6 +67,7 @@ dotfiles_files:
   - .vimrc
   - .gitconfig
   - .config/kitty/kitty.conf
+  - .config/pip/pip.conf
   - Library/Preferences/com.bahoom.HyperSwitch.plist
   - .m2/settings.xml
 
@@ -87,7 +94,6 @@ homebrew_installed_packages:
   - vault
   - zsh-syntax-highlighting
   - python3
-  - alt-tab
   - coreutils
   # - duti
 
@@ -118,6 +124,7 @@ homebrew_cask_apps:
   - microsoft-remote-desktop
   # - kdiff3
   - parallels
+  - alt-tab
 # Missing vault-ui (no cask exists)
 
 # See `geerlingguy.mas` role documentation for usage instructions.
