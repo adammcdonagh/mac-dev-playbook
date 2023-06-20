@@ -93,6 +93,7 @@ homebrew_cask_apps:
   - google-chrome
   - visual-studio-code
   - alt-tab
+  - macs-fan-control
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps: []
@@ -121,7 +122,7 @@ pip_packages:
     state: present
   - name: black
     state: present
-    
+
 # Set to 'true' to configure Sublime Text.
 configure_sublime: false
 sublime_base_path: "~/Library/Application Support/Sublime Text"
