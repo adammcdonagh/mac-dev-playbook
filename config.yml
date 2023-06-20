@@ -86,6 +86,8 @@ homebrew_taps:
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
   - font-hasklig
+  - font-meslo-lg-nerd-font
+  - font-meslo-for-powerline
   - kitty
   - google-drive
   - insomnia
