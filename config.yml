@@ -30,16 +30,18 @@ dockitems_remove:
   - MacPass
   - "Workspace ONE Intelligent Hub"
   - Catalog
+  - TV
+  - Freeform
 
 dockitems_persist:
-  - name: "Google Chrome Canary"
-    path: "/Applications/Google Chrome Canary.app/"
+  - name: "Arc"
+    path: "/Applications/Arc.app/"
     pos: 2
   - name: "Visual Studio Code"
     path: "/Applications/Visual Studio Code.app/"
     pos: 3
-  - name: "Apache Netbeans 15"
-    path: "/Applications/NetBeans/Apache NetBeans 15.app/"
+  - name: "Apache Netbeans 18"
+    path: "/Applications/NetBeans/Apache NetBeans 18.app/"
     pos: 4
   - name: "Kitty"
     path: "/Applications/Kitty.app/"
@@ -60,21 +62,22 @@ dotfiles_repo_accept_hostkey: true
 dotfiles_repo_local_destination: ~/git/dotfiles
 dotfiles_files:
   - .zshrc
-  - .p10k.zsh
   - .gitignore
   - .inputrc
   - .osx
   - .vimrc
   - .gitconfig
+  - .gitconfig-personal
+  - .gitconfig-work
   - .config/kitty/kitty.conf
   - .config/kitty/startup.conf
   - .config/pip/pip.conf
-  - Library/Preferences/com.bahoom.HyperSwitch.plist
   - .m2/settings.xml
+  - .aws/config
 
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
-  - autoconf
+  # - autoconf
   - bash-completion
   - git
   - gpg
@@ -88,16 +91,13 @@ homebrew_installed_packages:
   - freetds
   - pyenv
   - direnv
-  - ruby
-  - terraform
   - tomcat@7
   - tomcat
   - vault
   - zsh-syntax-highlighting
   - python3
   - coreutils
-  # - duti
-
+  - duti
 homebrew_taps:
   - homebrew/core
   - homebrew/cask
@@ -110,11 +110,9 @@ homebrew_cask_apps:
   - font-meslo-for-powerline
   - font-hasklig
   - kitty
-  - google-drive
   - insomnia
   - docker
-  - google-chrome-canary
-  # - vagrant
+  - arc
   - visual-studio-code
   - oracle-jdk
   - netbeans
@@ -122,8 +120,6 @@ homebrew_cask_apps:
   - sensiblesidebuttons
   - sqlitestudio
   - wireshark
-  - microsoft-remote-desktop
-  # - kdiff3
   - parallels
   - alt-tab
 # Missing vault-ui (no cask exists)
@@ -150,36 +146,30 @@ npm_packages: []
 # - name: webpack
 #   state: present # present/absent/latest, default: present
 #   version: "^2.6" # default: N/A
-pip_packages:
-  - name: requests
-    state: present
-  - name: black
-    state: present
-  - name: flake8
-    state: present
-  - name: flake8-bugbear
-    state: present
-  - name: flake8-polyfill
-    state: present
-  - name: flake8-use-fstring
-    state: present
-  - name: pep8-naming
-    state: present
-  - name: boto3
-    state: present
-  - name: ansible
-    state: present
-  - name: ansible-lint
-    state: present
+pip_packages: []
+  # - name: requests
+  #   state: present
+  # - name: black
+  #   state: present
+  # - name: flake8
+  #   state: present
+  # - name: flake8-bugbear
+  #   state: present
+  # - name: flake8-polyfill
+  #   state: present
+  # - name: flake8-use-fstring
+  #   state: present
+  # - name: pep8-naming
+  #   state: present
+  # - name: boto3
+  #   state: present
+  # - name: ansible
+  #   state: present
+  # - name: ansible-lint
+  #   state: present
 # - name: mkdocs
 #   state: present # present/absent/latest, default: present
 #   version: "0.16.3" # default: N/A
-
-# Set to 'true' to configure Sublime Text.
-configure_sublime: false
-sublime_base_path: "~/Library/Application Support/Sublime Text"
-sublime_config_path: "Packages/User"
-sublime_package_control: []
 
 # Glob pattern to ansible task files to run after all other tasks are finished.
 post_provision_tasks: []
