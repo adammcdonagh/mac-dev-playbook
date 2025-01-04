@@ -74,6 +74,8 @@ dotfiles_files:
   - .config/pip/pip.conf
   - .m2/settings.xml
   - .aws/config
+  - Library/Application Support/com.mitchellh.ghostty/config
+  - Library/Application Support/com.mitchellh.ghostty/ghostty-shaders/bettercrt.glsl
 
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
