@@ -25,7 +25,7 @@
       file:
         path: "{{ ansible_env.HOME }}/{{ item | dirname }}"
         state: directory
-      when: "{{ item | dirname }} != ''"
+      when: "( item | dirname ) != ''"
       with_items: "{{ dotfiles_files }}"
       tags: ["dotfiles"]
 
