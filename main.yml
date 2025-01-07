@@ -21,11 +21,13 @@
     #     - ~/.config/pip
     #     - ~/.aws
 
-    - name: for each of the dotfiles_files, get the directory they live in, and make sure it exists
+    - name: for each of the dotfiles_files, get the directory they live in, and make sure it exists, but only if its not at the root of the home dir
       file:
-        path: "{{ item.path | dirname }}"
+        path: "{{ ansible_env.HOME }}/{{ item | dirname }}"
         state: directory
+      when: "{{ item | dirname }} != ''"
       with_items: "{{ dotfiles_files }}"
+      tags: ["dotfiles"]
 
   roles:
     - role: elliotweiser.osx-command-line-tools
