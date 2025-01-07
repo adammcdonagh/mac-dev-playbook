@@ -10,15 +10,22 @@
       with_fileglob:
         - "{{ playbook_dir }}/config.yml"
       tags: ["always"]
-    - name: Create some dirs
+    # - name: Create some dirs
+    #   file:
+    #     path: "{{ item }}"
+    #     state: directory
+    #   tags: ["always"]
+    #   with_items:
+    #     - ~/.m2
+    #     - ~/.config/kitty
+    #     - ~/.config/pip
+    #     - ~/.aws
+
+    - name: for each of the dotfiles_files, get the directory they live in, and make sure it exists
       file:
-        path: "{{ item }}"
+        path: "{{ item.path | dirname }}"
         state: directory
-      tags: ["always"]
-      with_items:
-        - ~/.m2
-        - ~/.config/kitty
-        - ~/.config/pip
+      with_items: "{{ dotfiles_files }}"
 
   roles:
     - role: elliotweiser.osx-command-line-tools
