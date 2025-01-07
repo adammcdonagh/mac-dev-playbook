@@ -93,9 +93,9 @@ homebrew_installed_packages:
   - freetds
   - pyenv
   - direnv
-  - tomcat@7
+  - tomcat@8
+  # Tomcat 7 package has gone, so this will need manually installing
   - tomcat
-  - vault
   - zsh-syntax-highlighting
   - python3
   - coreutils
