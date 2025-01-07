@@ -34,21 +34,27 @@ dockitems_remove:
   - Freeform
 
 dockitems_persist:
+  - name: "Ghostty"
+    path: "/Applications/Ghostty.app/"
+    pos: 2
   - name: "Arc"
     path: "/Applications/Arc.app/"
-    pos: 2
+    pos: 3
   - name: "Visual Studio Code"
     path: "/Applications/Visual Studio Code.app/"
-    pos: 3
-  - name: "Apache Netbeans 18"
-    path: "/Applications/NetBeans/Apache NetBeans 18.app/"
     pos: 4
-  - name: "Kitty"
-    path: "/Applications/Kitty.app/"
-    pos: 6
-# - name: "Sublime Text"
-#   path: "/Applications/Sublime Text.app/"
-#   pos: 5
+  - name: "Vault-UI"
+    path: "/Applications/Vault-UI.app/"
+    pos: 5
+  - name: "Insomnia"
+    path: "/Applications/Insomnia.app/"
+    pos: 7
+  - name: "Apache Netbeans"
+    path: "/Applications/Apache NetBeans.app/"
+    pos: 8
+  - name: "Microsoft Teams"
+    path: "/Applications/Microsoft Teams.app/"
+    pos: 10
 
 configure_sudoers: false
 sudoers_custom_config: ""
@@ -69,8 +75,7 @@ dotfiles_files:
   - .gitconfig
   - .gitconfig-personal
   - .gitconfig-work
-  - .config/kitty/kitty.conf
-  - .config/kitty/startup.conf
+  - .config/ohmyposh/zen.toml
   - .config/pip/pip.conf
   - .m2/settings.xml
   - .aws/config
