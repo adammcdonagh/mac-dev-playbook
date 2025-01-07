@@ -100,18 +100,14 @@ homebrew_installed_packages:
   - python3
   - coreutils
   - duti
-homebrew_taps:
-  - homebrew/core
-  - homebrew/cask
-  - homebrew/cask-versions
-  - homebrew/cask-fonts
+homebrew_taps: []
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
   - font-meslo-lg-nerd-font
   - font-meslo-for-powerline
   - font-hasklig
-  - kitty
+  - ghostty
   - insomnia
   - docker
   - arc
@@ -124,6 +120,7 @@ homebrew_cask_apps:
   - wireshark
   - parallels
   - alt-tab
+  - raycast
 # Missing vault-ui (no cask exists)
 
 # See `geerlingguy.mas` role documentation for usage instructions.
