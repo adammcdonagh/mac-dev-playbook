@@ -121,6 +121,7 @@ homebrew_cask_apps:
   - parallels
   - alt-tab
   - raycast
+  - stats
 # Missing vault-ui (no cask exists)
 
 # See `geerlingguy.mas` role documentation for usage instructions.
