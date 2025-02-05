@@ -80,7 +80,7 @@ dotfiles_files:
   - .m2/settings.xml
   - .aws/config
   - Library/Application Support/com.mitchellh.ghostty/config
-  - Library/Application Support/com.mitchellh.ghostty/ghostty-shaders/bettercrt.glsl
+  - Library/Application Support/com.mitchellh.ghostty/ghostty-shaders/crt-shader-with-chromatic-aberration-glow-scanlines-dot-matrix.glsl
 
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
@@ -88,6 +88,7 @@ homebrew_installed_packages:
   - bash-completion
   - git
   - gpg
+  - pinentry-mac
   - sqlite
   - node
   - php
